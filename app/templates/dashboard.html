@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <div class="dashboard-icon">
+            ✓
+        </div>
+
+        <p class="dashboard-label">DASHBOARD</p>
+
+        <h1>Welcome, {{ username }}</h1>
+
+        <p class="dashboard-text">
+            You are successfully logged in to your account.
+        </p>
+
+        <a class="logout-btn" href="{{ url_for('auth.logout') }}">
+            Logout
+        </a>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,383 @@
+/* =========================
+   Color Palette
+   ========================= */
+
+:root {
+    --navy: #172A3A;
+    --dark-navy: #0F1C26;
+    --slate: #536878;
+    --taupe: #D8CFC4;
+    --light-taupe: #E8E1D9;
+    --white: #F8F8F6;
+}
+
+
+/* =========================
+   Reset
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   Body
+   ========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        135deg,
+        var(--dark-navy),
+        var(--navy)
+    );
+
+    color: var(--taupe);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   Authentication Card
+   ========================= */
+
+.auth-container {
+    width: 100%;
+    max-width: 430px;
+
+    background: rgba(15, 28, 38, 0.95);
+
+    border: 1px solid rgba(216, 207, 196, 0.12);
+
+    border-radius: 18px;
+
+    padding: 42px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.35);
+
+    animation: fadeIn 0.5s ease;
+}
+
+
+/* =========================
+   Brand
+   ========================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 35px;
+}
+
+.brand h2 {
+    color: var(--light-taupe);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.brand-mark {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--slate);
+    color: var(--white);
+
+    border-radius: 10px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   Header
+   ========================= */
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.auth-header h1 {
+    color: var(--white);
+    font-size: 29px;
+    margin-bottom: 9px;
+}
+
+.auth-header p {
+    color: #9FAAB2;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Form
+   ========================= */
+
+.form-group {
+    margin-bottom: 19px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--light-taupe);
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    background: #172A3A;
+
+    border: 1px solid #3D5363;
+
+    border-radius: 8px;
+
+    color: var(--white);
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #71808A;
+}
+
+.form-group input:focus {
+    border-color: var(--taupe);
+
+    box-shadow:
+        0 0 0 3px rgba(216, 207, 196, 0.08);
+}
+
+
+/* =========================
+   Button
+   ========================= */
+
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 7px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: var(--taupe);
+    color: var(--dark-navy);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: var(--light-taupe);
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   Switch Login / Signup
+   ========================= */
+
+.switch-auth {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #8D9AA3;
+
+    font-size: 13px;
+}
+
+.switch-auth a {
+    color: var(--taupe);
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.switch-auth a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Flash Messages
+   ========================= */
+
+.flash-message {
+    padding: 11px 13px;
+
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+
+    background: rgba(83, 104, 120, 0.35);
+
+    border: 1px solid rgba(216, 207, 196, 0.15);
+
+    color: var(--light-taupe);
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   Dashboard
+   ========================= */
+
+.dashboard {
+    width: 100%;
+    max-width: 520px;
+
+    text-align: center;
+
+    background: rgba(15, 28, 38, 0.95);
+
+    border: 1px solid rgba(216, 207, 196, 0.12);
+
+    border-radius: 18px;
+
+    padding: 55px 45px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.35);
+
+    animation: fadeIn 0.5s ease;
+}
+
+.dashboard-icon {
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--slate);
+
+    color: var(--white);
+
+    font-size: 25px;
+}
+
+.dashboard-label {
+    color: #82919B;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.dashboard h1 {
+    color: var(--white);
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+.dashboard-text {
+    color: #9FAAB2;
+
+    font-size: 14px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Logout
+   ========================= */
+
+.logout-btn {
+    display: inline-block;
+
+    padding: 11px 28px;
+
+    border-radius: 8px;
+
+    background: var(--slate);
+
+    color: var(--white);
+
+    font-size: 14px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.logout-btn:hover {
+    background: var(--taupe);
+
+    color: var(--dark-navy);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   Animation
+   ========================= */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

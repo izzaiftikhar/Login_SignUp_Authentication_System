@@ -1,2 +1,15 @@
-   [tool.vercel]
-   entrypoint = "run:app"
+[project]
+name = "login-signup-authentication-system"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "Flask",
+    "Flask-SQLAlchemy",
+    "Flask-Migrate",
+    "python-dotenv",
+    "Werkzeug",
+    "gunicorn",
+]
+
+[tool.vercel]
+entrypoint = "run:app"
